@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title id="dec-page-title">Account – Nixon US</title>
+
+    <!-- Logo -->
+    <link rel="icon" href="images/Nixon.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- remixicon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- First-Menu (Slider) -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper" style="background-color: #000;">
+            <div class="swiper-slide"><a href="">Sign Up For 15% Off Your First Order.</a></div>
+            <div class="swiper-slide">
+                <p class="mb-0">Shop Now, Pay Later with Afterpay</p>
+            </div>
+            <div class="swiper-slide">
+                <p class="mb-0">Free Shipping, Free Returns. Always. 24x7.</p>
+            </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!-- Navbar 1 -->
+    <nav class="navbar position-sticky navbar-expand-lg navbar-light p-2 ps-5 pe-5 pt-2 pb-0 d-none d-sm-none d-xl-block p-xl-2 pb-xl-0 p-xxl-2 ps-xxl-5 pe-xxl-5"
+        style="position: sticky; top: 0%; background-color: #fff; z-index: 990;">
+        <div class="col-12 col-xxl-10 container-fluid p-3 ps-3 pe-3">
+
+            <!-- Search-bar -->
+            <div class="search-bar p-2 pt-1 pb-1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="What can we help you find?">
+            </div>
+
+            <!-- Main-Logo -->
+            <a href="index.html" class="main-logo ms-5 ps-5 col-6 col-xl-5 d-flex justify-content-center">
+                <svg width="140" role="img" aria-label="Nixon home logo" height="26" viewBox="0 0 125 26" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Nixon home</title>
+                    <desc>Nixon home logo</desc>
+                    <path
+                        d="M49.3465 2.80859L43.1715 10.4676L36.9701 2.80859H32.8623L41.1044 12.9853L32.8888 23.162H36.9701L43.1715 15.5295L49.32 23.162H53.4808L45.2122 12.9853L53.5073 2.80859H49.3465Z"
+                        fill="black"></path>
+                    <path d="M27.933 2.80859H24.5938V23.162H27.933V2.80859Z" fill="black"></path>
+                    <path
+                        d="M14.9736 17.5436L3.02122 2.80859H0V23.162H3.33924V8.42699L15.2916 23.162H18.3128V2.80859H14.9736V17.5436Z"
+                        fill="black"></path>
+                    <path
+                        d="M94.7442 17.5436L82.7653 2.80859H79.7706V23.162H83.1099V8.42699L95.0622 23.162H98.0569V2.80859H94.7442V17.5436Z"
+                        fill="black"></path>
+                    <path
+                        d="M65.2211 2.70312C59.5497 2.70312 54.9384 7.31445 54.9384 12.9859C54.9384 18.6573 59.5497 23.2951 65.2211 23.2951C70.8925 23.2951 75.5304 18.6838 75.5304 12.9859C75.5304 7.31445 70.919 2.70312 65.2211 2.70312ZM65.2211 19.9558C61.3784 19.9558 58.2512 16.8286 58.2512 12.9859C58.2512 9.14308 61.3784 6.01586 65.2211 6.01586C69.0639 6.01586 72.1911 9.14308 72.1911 12.9859C72.1911 16.8286 69.0639 19.9558 65.2211 19.9558Z"
+                        fill="black"></path>
+                    <path
+                        d="M117.456 0C117.456 1.98764 117.456 10.1767 117.43 12.8799C117.43 14.3375 117.907 15.1061 118.675 15.7686C120.292 17.1202 121.087 17.7563 121.803 18.7103C123.287 20.698 120.16 23.1626 116.502 23.1626C112.845 23.1626 109.744 20.6715 111.202 18.7103C111.917 17.7563 112.712 17.1202 114.329 15.7686C115.124 15.1061 115.601 14.3375 115.575 12.8799C115.575 10.1767 115.575 1.96114 115.575 0C115.575 0 104.417 13.4895 109.267 21.7845C110.513 23.7722 112.924 25.0973 116.529 25.0973C120.133 25.0973 122.545 23.7457 123.79 21.7845C128.614 13.463 117.456 0 117.456 0Z"
+                        fill="black"></path>
+                </svg>
+            </a>
+
+            <!-- Menu-1 -->
+            <div class="menu1">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link pt-1 pb-1" aria-current="page" href="#"><img class="me-2"
+                                src="images/flag.svg" height="12" width="15" alt="">US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pt-1 pb-1" href="#">Order Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pt-1 pb-1" href="#">Find a Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pt-1 pb-1" id="login" href="login.html">Sign In<i
+                                class="ri-arrow-down-s-line ms-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" class="nav-link pt-1 pb-1" href="#">
+                            <svg width="22" height="17" viewBox="0 0 22 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.26711 2H0V0H4.73289L7.73289 9.5H17.7192L19.7192 1.5H22V3.5H21.2808L19.2808 11.5H6.26711L3.26711 2Z"
+                                    fill="black">0</path>
+                                <circle cx="8" cy="14.5" r="2" fill="black"></circle>
+                                <circle cx="18" cy="14.5" r="2" fill="black"></circle>
+                            </svg>
+                            <span id="cart-prod-count" class="header-cart__badge-count" data-cart-badge-count="">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Header (Main-Navbar) -->
+    <header class="header">
+        <nav class="nav container ps-1 pe-1 ms-0 me-2 ps-sm-2 pe-sm-2 p-lg-0 ms-lg-3 me-lg-3 m-xl-0 ms-xxl-5">
+            <div class="nav_data">
+                <!-- <a href="#" class="nav_logo">
+                        CodeBox
+                    </a> -->
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav_toggle-menu"></i>
+                    <i class="ri-close-large-fill nav_toggle-close"></i>
+                </div>
+
+                <!-- Main-Logo -->
+                <div class="main-logo d-flex justify-content-center ms-4 col-6 col-sm-4 col-md-8 col-lg-12 d-xl-none">
+                    <svg width="140" role="img" aria-label="Nixon home logo" height="22" viewBox="0 0 125 26"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <title>Nixon home</title>
+                        <desc>Nixon home logo</desc>
+                        <path
+                            d="M49.3465 2.80859L43.1715 10.4676L36.9701 2.80859H32.8623L41.1044 12.9853L32.8888 23.162H36.9701L43.1715 15.5295L49.32 23.162H53.4808L45.2122 12.9853L53.5073 2.80859H49.3465Z"
+                            fill="black"></path>
+                        <path d="M27.933 2.80859H24.5938V23.162H27.933V2.80859Z" fill="black"></path>
+                        <path
+                            d="M14.9736 17.5436L3.02122 2.80859H0V23.162H3.33924V8.42699L15.2916 23.162H18.3128V2.80859H14.9736V17.5436Z"
+                            fill="black"></path>
+                        <path
+                            d="M94.7442 17.5436L82.7653 2.80859H79.7706V23.162H83.1099V8.42699L95.0622 23.162H98.0569V2.80859H94.7442V17.5436Z"
+                            fill="black"></path>
+                        <path
+                            d="M65.2211 2.70312C59.5497 2.70312 54.9384 7.31445 54.9384 12.9859C54.9384 18.6573 59.5497 23.2951 65.2211 23.2951C70.8925 23.2951 75.5304 18.6838 75.5304 12.9859C75.5304 7.31445 70.919 2.70312 65.2211 2.70312ZM65.2211 19.9558C61.3784 19.9558 58.2512 16.8286 58.2512 12.9859C58.2512 9.14308 61.3784 6.01586 65.2211 6.01586C69.0639 6.01586 72.1911 9.14308 72.1911 12.9859C72.1911 16.8286 69.0639 19.9558 65.2211 19.9558Z"
+                            fill="black"></path>
+                        <path
+                            d="M117.456 0C117.456 1.98764 117.456 10.1767 117.43 12.8799C117.43 14.3375 117.907 15.1061 118.675 15.7686C120.292 17.1202 121.087 17.7563 121.803 18.7103C123.287 20.698 120.16 23.1626 116.502 23.1626C112.845 23.1626 109.744 20.6715 111.202 18.7103C111.917 17.7563 112.712 17.1202 114.329 15.7686C115.124 15.1061 115.601 14.3375 115.575 12.8799C115.575 10.1767 115.575 1.96114 115.575 0C115.575 0 104.417 13.4895 109.267 21.7845C110.513 23.7722 112.924 25.0973 116.529 25.0973C120.133 25.0973 122.545 23.7457 123.79 21.7845C128.614 13.463 117.456 0 117.456 0Z"
+                            fill="black"></path>
+                    </svg>
+                </div>
+
+                <!-- Search-bar -->
+                <div class="search-bar p-2 pt-1 pb-1 d-none d-sm-flex flex-sm-row d-sm-block d-xl-none"
+                    style="border-bottom: 1px solid">
+                    <i class="fa-solid fa-magnifying-glass me-2"></i>
+                    <input type="text" placeholder="What can we help you find?">
+                </div>
+
+                <!-- Menu-1 -->
+                <div class="menu1 ms-4 d-xl-none">
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item d-none">
+                            <a class="nav-link pt-1 pb-1" aria-current="page" href="#"><img class="me-2"
+                                    src="images/flag.svg" height="12" width="15" alt="">US</a>
+                        </li>
+                        <li class="nav-item d-none">
+                            <a class="nav-link pt-1 pb-1" href="#">Order Status</a>
+                        </li>
+                        <li class="nav-item d-none">
+                            <a class="nav-link pt-1 pb-1" href="#">Find a Store</a>
+                        </li>
+                        <li class="nav-item d-flex ms-lg-4 ms-xl-0">
+                            <a class="nav-link pt-1 pb-1" id="login" href="login.html" style="color: #000;">Sign</a>
+                            <a class="nav-link pt-1 pb-1" id="login" href="login.html" style="color: #000;">In<i
+                                    class="ri-arrow-down-s-line ms-1"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" class="nav-link ms-3 ms-md-4 ms-lg-4 pt-1 pb-1 d-flex" href="#">
+                                <svg width="22" height="17" viewBox="0 0 22 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.26711 2H0V0H4.73289L7.73289 9.5H17.7192L19.7192 1.5H22V3.5H21.2808L19.2808 11.5H6.26711L3.26711 2Z"
+                                        fill="black">0</path>
+
+                                    <circle cx="8" cy="14.5" r="2" fill="black"></circle>
+                                    <circle cx="18" cy="14.5" r="2" fill="black"></circle>
+                                </svg>
+                                <span id="cart-prod-count-small" style="color: #000;" class="header-cart__badge-count ms-1"
+                                    data-cart-badge-count="">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- NAV MENU -->
+            <div class="nav_menu p-0" id="nav-menu">
+                <ul class="nav_list ps-0">
+
+                    <!-- Dropdown 1 -->
+                    <li class="dropdown_item">
+                        <div class="nav_link dropdown_button p-3 pt-2 pb-2 ps-lg-4 pe-lg-4 p-xxl-2">
+                            Men's Watches
+                            <i class="ri-arrow-down-s-line dropdown_arrow"></i>
+                        </div>
+
+                        <div class="dropdown_container">
+                            <div class="dropdown_content pb-xl-5 pt-xl-5" style="border-top: 1px solid lightgrey;">
+                                <div class="dropdown_group mt-0 pt-3 pb-3">
+                                    <ul class="dropdown_list p-0 p-sm-0 pe-lg-4 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">New Arrivals</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Best Sellers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Engraved
+                                                Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Luminescent</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Marine Room</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop All Men's
+                                                Watches</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-5">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Icons </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">51-30 Chrono</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Sentry</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Time Teller</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Shop All Icons</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop By
+                                                Style</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Analog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Automatic</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Chronograph</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Digital</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Solar</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Surf</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop By Size</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Small</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Medium</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Large</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Oversized</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Watch Size Guide</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group mb-0 pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link"
+                                                style="font-weight: 500; font-size: 14px;">Shop By Color</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Black</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Blue</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Bronze</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Gold</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Silver</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Turquoise</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Dropdown 2 -->
+                    <li class="dropdown_item">
+                        <div class="nav_link dropdown_button p-3 pt-2 pb-2 ps-lg-4 pe-lg-4 p-xxl-2">
+                            Women's Watches
+                            <i class="ri-arrow-down-s-line dropdown_arrow"></i>
+                        </div>
+
+                        <div class="dropdown_container">
+                            <div class="dropdown_content pb-xl-5 pt-xl-5" style="border-top: 1px solid lightgrey;">
+                                <div class="dropdown_group mt-0 pt-3 pb-3">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">New Arrivals</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Best Sellers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Engraved
+                                                Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Luminescent</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Marine Room</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop All Women's
+                                                Watches</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-5">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Icons </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">51-30 Chrono</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Sentry</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Time Teller</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Shop All Icons</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop By
+                                                Style</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Analog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Digital</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Leather</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Solar</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Stainless Steel</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Surf</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop By Size</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Small</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Medium</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Large</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Oversized</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Watch Size Guide</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group mb-0 pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop By
+                                                Color</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Black</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Bronze</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Gold</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Red</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Rose Gold</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Silver</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Dropdown 3 -->
+                    <li class="dropdown_item">
+                        <div class="nav_link dropdown_button p-3 pt-2 pb-2 ps-lg-4 pe-lg-4 p-xxl-2">
+                            Custom Watches
+                        </div>
+                    </li>
+
+                    <!-- Dropdown 4 -->
+                    <li class="dropdown_item">
+                        <div class="nav_link dropdown_button p-3 pt-2 pb-2 ps-lg-4 pe-lg-4 p-xxl-2">
+                            Bands
+                            <i class="ri-arrow-down-s-line dropdown_arrow"></i>
+                        </div>
+
+                        <div class="dropdown_container">
+                            <div class="dropdown_content pb-xl-5 pt-xl-5" style="border-top: 1px solid lightgrey;">
+                                <div class="dropdown_group pe-5 mt-0 pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4 pe-lg-5" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop All
+                                                Bands</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-5">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop By
+                                                Material</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Leather</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Rubber</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Stainless Steel</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Sustainable</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop By Size</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">16mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">20mm</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">23mm</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group mb-0 pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop By Type
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">NATO</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Quick Release</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Dropdown 5 -->
+                    <li class="dropdown_item">
+                        <div class="nav_link dropdown_button p-3 pt-2 pb-2 ps-lg-4 pe-lg-4 p-xxl-2">
+                            Headwear
+                            <i class="ri-arrow-down-s-line dropdown_arrow"></i>
+                        </div>
+
+                        <div class="dropdown_container">
+                            <div class="dropdown_content pb-xl-5 pt-xl-5" style="border-top: 1px solid lightgrey;">
+                                <div class="dropdown_group pe-4 mt-0 pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4 pe-lg-5" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop All
+                                                Headwear</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group mb-0 pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-5">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop By
+                                                Style</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Snapbacks</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">5-Panel & Camps</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Flexfits</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Truckers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Dropdown 6 -->
+                    <li class="dropdown_item">
+                        <div class="nav_link dropdown_button p-3 pt-2 pb-2 ps-lg-4 pe-lg-4 p-xxl-2">
+                            Bags & Accessories
+                            <i class="ri-arrow-down-s-line dropdown_arrow"></i>
+                        </div>
+
+                        <div class="dropdown_container">
+                            <div class="dropdown_content pb-xl-5 pt-xl-5" style="border-top: 1px solid lightgrey;">
+                                <div class="dropdown_group mt-0 pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Shop All Bags &
+                                                Accessories</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-5">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Backpacks</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Duffel Bags</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Shop All Bags</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group mb-0 pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Accessories</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Belts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Wallets</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Shop All Accessories</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Dropdown 7 -->
+                    <li class="dropdown_item">
+                        <div class="nav_link dropdown_button p-3 pt-2 pb-2 ps-lg-4 pe-lg-4 p-xxl-2">
+                            Gifts
+                            <i class="ri-arrow-down-s-line dropdown_arrow"></i>
+                        </div>
+
+                        <div class="dropdown_container">
+                            <div class="dropdown_content pb-xl-5 pt-xl-5" style="border-top: 1px solid lightgrey;">
+                                <div class="dropdown_group pe-2 mt-0 pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4 pe-lg-5" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Custom
+                                                Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Engravable Watches</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Gift Cards</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Shop All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-5">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Gifts For
+                                                Him</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Top Rated Gifts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Gifts Under $50</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Gifts Under $150</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Shop All Gifts for Him</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Gifts For
+                                                Her</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Top Rated Gifts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Gifts Under $50</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Gifts Under $150</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Shop All Gifts for Her</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown_group mb-0 pt-2 pb-2">
+                                    <ul class="dropdown_list p-0 ps-lg-4" style="border: none;">
+                                        <li>
+                                            <a href="#" class="dropdown_link" style="font-weight: 500;">Gifts By
+                                                Occasion</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Anniversary</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Birthday</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown_link">Wedding</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Section -->
+    <div class="container-fluid product-section p-3 pb-0 p-sm-3 pb-sm-0 p-md-5 pt-md-3 pb-md-0 p-lg-4 pt-lg-3 pb-xl-0 pt-xxl-3 p-xxl-5 pb-xxl-0 d-xxl-flex justify-content-xxl-center"
+        style="border-top: 1px solid whitesmoke;">
+        <div class="row col-xxl-10">
+            <div class="prod-sec-path mb-4">
+                <p><a href="index.html">Home <i class="ri-arrow-right-s-line"></i></a><a href="men.html">Men’s Watches
+                        <i class="ri-arrow-right-s-line"></i></a><span id="des-path-title">String 44</span></p>
+            </div>
+            <div class="prod-sec-start col-12 order-2 pb-3 col-sm-12 pe-sm-3 pb-sm-2 order-lg-1 col-lg-4 pt-xxl-3">
+                <a id="description-change" class="change-btn" href="">New</a>
+                <h4 id="description-title" class="pt-3">Stinger 44</h4>
+                <p class="rating"><span id="description-rating">4.5</span><span id="description-ratingCount" class="ms-1">30</span></p>
+                <p id="description" class="description mb-0">A dive inspired watch you can wear to the dive bar. The
+                    Stinger 44 resonates to a time where analog ruled the depths of the unknown by allowing divers to
+                    know how long they have been underwater with the rotating bezel. Rule the night in style with
+                    luminous indices for low light visibility. A 44mm stainless steel case weighted just right for
+                    everyday use, a 5-link bracelet that will catch any eye day or night, and did we mention it's
+                    powered by the sun?</p>
+            </div>
+            <div class="prod-sec-middle col-12 order-1 d-flex justify-content-center col-sm-12 order-lg-2 col-lg-4">
+                <img id="description-image"
+                    src="https://www.nixon.com/cdn/shop/files/A1402-5236-view1_1000x.png?v=1718725247" alt="">
+            </div>
+            <div class="prod-sec-end col-12 order-3 pt-2 col-sm-12 col-lg-4">
+                <div class="d-flex justify-content-between">
+                    <h6 id="description-color" class="pb-2">Silver</h6>
+                    <span id="description-code">A1402-5236-00</span>
+                </div>
+                <h4 id="description-price" class="mb-4 pt-4 pt-sm-3 pt-xxl-4">$275.00</h4>
+                <div class="d-flex flex-column pb-3 mb-3" style="border-bottom: 1px solid black;">
+                    <span style="color: gray;" class="pb-2">or 4 interest-free payments of $68.75 with</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" width="104" height="36"
+                        viewBox="0 0 104 36">
+                        <path class="afterpay-logo-badge-background" fill="#b2fce4"
+                            d="m86.00173,35.9321l-68.00064,0c-9.90375,0 -17.93101,-8.02726 -17.93101,-17.93101l0,0c0,-9.90375 8.02726,-17.93101 17.93101,-17.93101l68.00064,0c9.90375,0 17.931,8.02726 17.931,17.93101l0,0c0.00652,9.89724 -8.02725,17.93101 -17.931,17.93101z">
+                        </path>
+                        <g class="afterpay-logo-badge-lockup">
+                            <path
+                                d="m88.23074,13.52071l-2.25928,-1.29288l-2.29193,-1.31247c-1.51489,-0.86845 -3.40851,0.22201 -3.40851,1.97197l0,0.29384c0,0.16324 0.08489,0.31342 0.22854,0.39178l1.06435,0.60726c0.29383,0.16978 0.6595,-0.0457 0.6595,-0.38525l0,-0.69868c0,-0.34607 0.37219,-0.56155 0.67256,-0.39178l2.0895,1.20147l2.08298,1.19493c0.30037,0.16977 0.30037,0.60727 0,0.77704l-2.08298,1.19494l-2.0895,1.20146c-0.30037,0.16978 -0.67256,-0.0457 -0.67256,-0.39178l0,-0.34607c0,-1.74997 -1.89362,-2.84696 -3.40851,-1.97198l-2.29193,1.31247l-2.25928,1.29289c-1.52142,0.87498 -1.52142,3.07549 0,3.95047l2.25928,1.29289l2.29193,1.31247c1.51489,0.86845 3.40851,-0.22201 3.40851,-1.97198l0,-0.29383c0,-0.16325 -0.08489,-0.31343 -0.22854,-0.39179l-1.06435,-0.60726c-0.29383,-0.16977 -0.6595,0.04571 -0.6595,0.38525l0,0.69868c0,0.34608 -0.37219,0.56156 -0.67256,0.39179l-2.0895,-1.20147l-2.08298,-1.19494c-0.30037,-0.16977 -0.30037,-0.60726 0,-0.77703l2.08298,-1.19494l2.0895,-1.20147c0.30037,-0.16977 0.67256,0.04571 0.67256,0.39179l0,0.34607c0,1.74996 1.89362,2.84695 3.40851,1.97197l2.29193,-1.31247l2.25928,-1.29288c1.52142,-0.88151 1.52142,-3.0755 0,-3.95048z">
+                            </path>
+                            <path
+                                d="m73.4083,13.95167l-5.28907,10.92421l-2.19398,0l1.9785,-4.08107l-3.11467,-6.84314l2.25275,0l1.99809,4.58386l2.18092,-4.58386l2.18746,0z">
+                            </path>
+                            <path
+                                d="m20.52416,17.83032c0,-1.30594 -0.9468,-2.2201 -2.10909,-2.2201s-2.1091,0.93375 -2.1091,2.2201c0,1.2733 0.94681,2.2201 2.1091,2.2201s2.10909,-0.91416 2.10909,-2.2201m0.01959,3.87865l0,-1.00558c-0.57461,0.69868 -1.43,1.12964 -2.44864,1.12964c-2.12869,0 -3.74152,-1.70425 -3.74152,-4.00271c0,-2.27887 1.67813,-4.01577 3.78723,-4.01577c0.99251,0 1.82832,0.43749 2.40293,1.11658l0,-0.97946l1.90668,0l0,7.7573l-1.90668,0z">
+                            </path>
+                            <path
+                                d="m31.72262,19.98513c-0.66603,0 -0.85539,-0.24813 -0.85539,-0.9011l0,-3.44116l1.22758,0l0,-1.6912l-1.22758,0l0,-1.89361l-1.95239,0l0,1.89361l-2.52047,0l0,-0.7705c0,-0.65297 0.24813,-0.9011 0.93375,-0.9011l0.43096,0l0,-1.50184l-0.94027,0c-1.61284,0 -2.37682,0.52891 -2.37682,2.14175l0,1.03822l-1.08393,0l0,1.68467l1.08393,0l0,6.0661l1.95238,0l0,-6.0661l2.52047,0l0,3.80029c0,1.58019 0.60727,2.26581 2.18746,2.26581l1.00557,0l0,-1.72384l-0.38525,0z">
+                            </path>
+                            <path
+                                d="m38.73553,17.13164c-0.13713,-1.00557 -0.95987,-1.61284 -1.92627,-1.61284c-0.95986,0 -1.75649,0.58768 -1.95238,1.61284l3.87865,0zm-3.89824,1.208c0.13712,1.14923 0.95987,1.8022 2.00462,1.8022c0.82275,0 1.45613,-0.38525 1.82832,-1.00558l2.00462,0c-0.46361,1.64549 -1.93932,2.69677 -3.87865,2.69677c-2.34416,0 -3.98965,-1.64548 -3.98965,-3.98965c0,-2.34417 1.7369,-4.03536 4.03536,-4.03536c2.31152,0 3.98965,1.70425 3.98965,4.03536c0,0.16977 -0.01305,0.33955 -0.0457,0.49626l-5.94857,0z">
+                            </path>
+                            <path
+                                d="m53.26414,17.83032c0,-1.2537 -0.94681,-2.2201 -2.1091,-2.2201c-1.16229,0 -2.1091,0.93375 -2.1091,2.2201c0,1.2733 0.94681,2.2201 2.1091,2.2201c1.16229,0 2.1091,-0.95986 2.1091,-2.2201m-6.14446,7.04556l0,-10.92421l1.90667,0l0,1.00558c0.57462,-0.71174 1.43001,-1.14923 2.44865,-1.14923c2.09603,0 3.74152,1.72384 3.74152,4.00271s-1.67814,4.01578 -3.78723,4.01578c-0.97946,0 -1.78261,-0.38526 -2.34417,-1.03823l0,4.08107l-1.96544,0l0,0.00653z">
+                            </path>
+                            <path
+                                d="m62.09231,17.83032c0,-1.30594 -0.94681,-2.2201 -2.1091,-2.2201c-1.16229,0 -2.1091,0.93375 -2.1091,2.2201c0,1.2733 0.94681,2.2201 2.1091,2.2201c1.16229,0 2.1091,-0.91416 2.1091,-2.2201m0.01959,3.87865l0,-1.00558c-0.57462,0.69868 -1.43001,1.12964 -2.44865,1.12964c-2.12868,0 -3.74152,-1.70425 -3.74152,-4.00271c0,-2.27887 1.67813,-4.01577 3.78723,-4.01577c0.99252,0 1.82832,0.43749 2.40294,1.11658l0,-0.97946l1.90667,0l0,7.7573l-1.90667,0z">
+                            </path>
+                            <path
+                                d="m43.67852,14.70912s0.4832,-0.9011 1.67814,-0.9011c0.50931,0 0.8358,0.1763 0.8358,0.1763l0,1.97851s-0.71827,-0.44402 -1.37777,-0.35261c-0.6595,0.09142 -1.0774,0.69215 -1.0774,1.50184l0,4.59038l-1.97197,0l0,-7.75076l1.90667,0l0,0.75744l0.00653,0z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <button id="add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">Add to Cart</button>
+                <p class="pt-4 text-center"><i class="fa-solid fa-truck me-3"></i>Free Shipping + Returns</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header p-4" style="border-bottom: 1px solid whitesmoke;">
+            <h5 class="mb-0" id="offcanvasRightLabel" style="font-size: 16px; letter-spacing: 1px;">Shopping Cart</h5>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body p-4">
+                <div class="cart-top">
+                    <p class="mb-0" id="cart-count">0 items</p>
+                </div>
+                <div id="cart-products"></div>
+                <div class="cart-end pt-4">
+                    <p class="mb-2">Taxes and shipping are calculated at Checkout</p>
+                    <h6>Subtotal : $275.00</h6>
+                </div>
+        </div>
+    </div>
+
+    <!-- Footer Banner -->
+    <div class="footer-banner mt-3 mt-sm-4 mt-xl-5">
+        <div
+            class="footer-banner-body d-flex h-100 ms-2 me-2 d-column ms-md-3 me-md-3 ms-lg-4 me-md-4 ms-xxl-5 me-xxl-5">
+            <div
+                class="footer-bannner-content d-flex justify-content-between align-items-center w-100 d-column justify-content-center mt-5 mt-md-0 justify-content-md-between">
+                <h3 class="heading-3 mb-sm-4 mb-md-0">Become a Nixon Insider</h3>
+                <a href="#">Get 15% Off</a>
+                <h3 style="visibility: hidden;">Become a Nixon Insider</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer p-2 pt-5 pb-2 p-sm-4 p-md-2 pt-md-5 p-lg-4 pt-lg-5 p-xxl-5 pb-xxl-2">
+        <div class="row ps-2 pe-2">
+            <div class="footer-top container mb-5 d-xxl-flex justify-content-center">
+                <div class="row col-xxl-10 ps-xxl-4 pe-xxl-4">
+                    <div class="text-left col-12 ps-1 pe-1 col-sm-6 p-sm-0 mb-4 p-sm-1 mb-sm-0">
+                        <a href="" class="logo">
+                            <svg width="140" role="img" aria-label="Nixon home logo" height="26" viewBox="0 0 125 26"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title>Nixon home</title>
+                                <desc>Nixon home logo</desc>
+                                <path
+                                    d="M49.3465 2.80859L43.1715 10.4676L36.9701 2.80859H32.8623L41.1044 12.9853L32.8888 23.162H36.9701L43.1715 15.5295L49.32 23.162H53.4808L45.2122 12.9853L53.5073 2.80859H49.3465Z"
+                                    fill="black"></path>
+                                <path d="M27.933 2.80859H24.5938V23.162H27.933V2.80859Z" fill="black"></path>
+                                <path
+                                    d="M14.9736 17.5436L3.02122 2.80859H0V23.162H3.33924V8.42699L15.2916 23.162H18.3128V2.80859H14.9736V17.5436Z"
+                                    fill="black"></path>
+                                <path
+                                    d="M94.7442 17.5436L82.7653 2.80859H79.7706V23.162H83.1099V8.42699L95.0622 23.162H98.0569V2.80859H94.7442V17.5436Z"
+                                    fill="black"></path>
+                                <path
+                                    d="M65.2211 2.70312C59.5497 2.70312 54.9384 7.31445 54.9384 12.9859C54.9384 18.6573 59.5497 23.2951 65.2211 23.2951C70.8925 23.2951 75.5304 18.6838 75.5304 12.9859C75.5304 7.31445 70.919 2.70312 65.2211 2.70312ZM65.2211 19.9558C61.3784 19.9558 58.2512 16.8286 58.2512 12.9859C58.2512 9.14308 61.3784 6.01586 65.2211 6.01586C69.0639 6.01586 72.1911 9.14308 72.1911 12.9859C72.1911 16.8286 69.0639 19.9558 65.2211 19.9558Z"
+                                    fill="black"></path>
+                                <path
+                                    d="M117.456 0C117.456 1.98764 117.456 10.1767 117.43 12.8799C117.43 14.3375 117.907 15.1061 118.675 15.7686C120.292 17.1202 121.087 17.7563 121.803 18.7103C123.287 20.698 120.16 23.1626 116.502 23.1626C112.845 23.1626 109.744 20.6715 111.202 18.7103C111.917 17.7563 112.712 17.1202 114.329 15.7686C115.124 15.1061 115.601 14.3375 115.575 12.8799C115.575 10.1767 115.575 1.96114 115.575 0C115.575 0 104.417 13.4895 109.267 21.7845C110.513 23.7722 112.924 25.0973 116.529 25.0973C120.133 25.0973 122.545 23.7457 123.79 21.7845C128.614 13.463 117.456 0 117.456 0Z"
+                                    fill="black"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="text-right col-12 ps-1 pe-1 col-sm-6 p-sm-0">
+                        <div class="footer-social-list text-start text-sm-end ">
+                            <a class="ms-2 me-2" href="">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="19" height="19" rx="4" stroke="black" stroke-width="2">
+                                    </rect>
+                                    <circle cx="10.5" cy="10.5" r="4.25" stroke="black" stroke-width="2"></circle>
+                                    <circle cx="15.75" cy="4.1999" r="1.05" fill="black"></circle>
+                                </svg>
+                            </a>
+                            <a class="ms-2 me-3" href="">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.606 0.0078125C4.69702 0.0078125 0 4.70483 0 10.6138C0 15.0138 2.60002 18.6138 6.40002 20.3138C6.40002 19.5558 6.40003 18.6469 6.55103 17.8889C6.70203 16.9799 7.914 12.1318 7.914 12.1318C7.914 12.1318 7.61102 11.5258 7.61102 10.4648C7.61102 8.94884 8.51999 7.73682 9.73199 7.73682C10.641 7.73682 11.132 8.53681 11.132 9.40381C11.132 10.2708 10.527 11.8278 10.223 13.1918C9.92002 14.2918 10.823 15.1918 11.923 15.1618C13.893 15.1618 15.257 12.5858 15.257 9.55585C15.257 7.28385 13.741 5.46484 10.862 5.46484C7.68 5.46484 5.711 7.88884 5.711 10.6158C5.711 11.5158 6.01105 12.1158 6.51105 12.7158C6.66205 13.0158 6.711 13.0158 6.711 13.3218C6.711 13.4728 6.56 13.9268 6.56 14.2308C6.56 14.5338 6.25704 14.5338 5.95404 14.5308C4.43904 13.9248 3.83301 12.2588 3.83301 10.4398C3.83301 7.40982 6.409 3.77283 11.409 3.77283C15.5 3.77283 18.109 6.6728 18.109 9.8728C18.109 13.9638 15.837 17.1448 12.352 17.1448C11.139 17.1448 10.079 16.5399 9.776 15.7819C9.776 15.7819 9.17001 18.2068 9.01801 18.6818C8.86701 19.4398 8.41303 20.3489 7.95703 20.9539C8.86603 21.2539 9.95703 21.4538 10.957 21.4088C16.866 21.4088 21.563 16.7119 21.563 10.8029C21.212 4.71386 16.506 0.0138125 10.606 0.0078125Z"
+                                        fill="#1E1E1E"></path>
+                                </svg>
+                            </a>
+                            <a class="ms-2 me-3" href="">
+                                <svg width="10" height="22" viewBox="0 0 10 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.57599 21.213V11.213H0V7.57599H2.57599C2.57599 7.57599 2.57599 6.06002 2.57599 4.54602C2.57599 2.12202 4.09099 0 7.57599 0C8.93899 0 9.97601 0.199978 9.97601 0.151978L9.82501 3.48499C9.82501 3.48499 8.76398 3.48499 7.55298 3.48499C6.33998 3.48499 6.03699 4.09 6.03699 5C6.03699 5.8 6.03699 3.33398 6.03699 7.59998H9.82501L9.67401 11.237H6.03699V21.237H2.57599V21.213Z"
+                                        fill="#1E1E1E"></path>
+                                </svg>
+                            </a>
+                            <a class="ms-2 me-2" href="">
+                                <svg width="30" height="21" viewBox="0 0 30 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M29.1832 3.27871C29.0149 2.64452 28.6828 2.0657 28.2203 1.60024C27.7578 1.13479 27.1812 0.799031 26.5481 0.626613C24.2177 0 14.9032 0 14.9032 0C14.9032 0 5.58871 0 3.25839 0.626613C2.62529 0.799031 2.04861 1.13479 1.58612 1.60024C1.12364 2.0657 0.791584 2.64452 0.623226 3.27871C0 5.61919 0 10.5 0 10.5C0 10.5 0 15.3808 0.623226 17.7213C0.791584 18.3555 1.12364 18.9343 1.58612 19.3998C2.04861 19.8652 2.62529 20.201 3.25839 20.3734C5.58871 21 14.9032 21 14.9032 21C14.9032 21 24.2177 21 26.5481 20.3734C27.1812 20.201 27.7578 19.8652 28.2203 19.3998C28.6828 18.9343 29.0149 18.3555 29.1832 17.7213C29.8065 15.3808 29.8065 10.5 29.8065 10.5C29.8065 10.5 29.8065 5.61919 29.1832 3.27871Z"
+                                        fill="#282828"></path>
+                                    <path d="M11.8549 14.9336L19.6452 10.5016L11.8549 6.06958V14.9336Z" fill="white">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="ms-2 me-3" href="">
+                                <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.5261 2.85354C19.4161 2.29194 20.099 1.40143 20.4194 0.340616C19.5862 0.861922 18.6654 1.23893 17.683 1.44303C16.8991 0.559019 15.7787 0.0078125 14.5387 0.0078125C12.1597 0.0078125 10.2319 2.04234 10.2319 4.55136C10.2319 4.90757 10.2677 5.25467 10.3416 5.58617C6.76211 5.39637 3.58813 3.58935 1.46188 0.838522C1.09086 1.51193 0.878852 2.29194 0.878852 3.12395C0.878852 4.69956 1.63937 6.09058 2.79556 6.90699C2.08928 6.88359 1.4249 6.67689 0.843106 6.33888V6.39478C0.843106 8.59701 2.32717 10.4339 4.30058 10.8499C3.93819 10.9565 3.55855 11.0098 3.16411 11.0098C2.88678 11.0098 2.6156 10.9825 2.35429 10.9292C2.90157 12.7337 4.49287 14.0493 6.37876 14.0844C4.90333 15.3038 3.04578 16.0292 1.028 16.0292C0.680401 16.0292 0.336503 16.0097 0 15.9668C1.90685 17.2551 4.17116 18.0078 6.60433 18.0078C14.53 18.0078 18.8614 11.0839 18.8614 5.07917C18.8614 4.88157 18.859 4.68526 18.8503 4.49156C19.6922 3.85066 20.4244 3.04985 21 2.13854C20.2272 2.49994 19.3964 2.74434 18.5261 2.85354Z"
+                                        fill="black"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menus container mb-0 mb-sm-0 mb-xl-4 mb-xxl-5">
+                <div class="row col-xxl-10 justify-content-xxl-center">
+                    <div class="footer-menu-block col-12 mb-5 col-sm-6 col-md-4 col-lg-3">
+                        <h6 class="footer-menu-title mb-0">Company</h6>
+                        <p>_____</p>
+                        <ul class="footer-menu-content ps-0">
+                            <li class="footer-menu-link mb-3">
+                                <a href="">About Us</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Responsibility</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Team</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Blog</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Collaborations</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Work Here</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Student Discount</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Affiliate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-block col-12 mb-5 col-sm-6 col-md-4 col-lg-3">
+                        <h6 class="footer-menu-title mb-0">Customer Support</h6>
+                        <p>_____</p>
+                        <ul class="footer-menu-content ps-0">
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Customer Service</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Need a Repair</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Repair Order Status</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">FAQs</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Warranty</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Watch Size Guide</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-block col-12 mb-5 col-sm-6 col-md-4 col-lg-3">
+                        <h6 class="footer-menu-title mb-0">Orders & Returns</h6>
+                        <p>_____</p>
+                        <ul class="footer-menu-content ps-0">
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Shipping</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Returns</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Track Your Order</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Check Gift Card Balance</a>
+                            </li>
+                            <li class="footer-menu-link mb-3">
+                                <a href="">Promotions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="footer-bottom pt-3 pb-0 p-sm-0 pt-sm-2 pb-sm-2 ps-md-4 me-md-4 ps-lg-0 pe-lg-0 d-xxl-flex justify-content-xxl-center ps-xxl-5 pe-xxl-5">
+                <div class="footer-copyright col-xxl-10 pt-3 pt-xl-2">
+                    <ul class="footer-copyright-links d-flex flex-wrap ps-0">
+                        <li>
+                            <a class="analytics-click p4" href="/pages/privacy-policy" data-menu-type="footer copyright"
+                                data-menu-name="Privacy Policy">Privacy Polic</a>
+                        </li>
+                        <span class="menu-break">|</span>
+                        <li>
+                            <a class="analytics-click p4" href="/pages/terms-and-conditions"
+                                data-menu-type="footer copyright" data-menu-name="Terms and Conditions">Terms and
+                                Conditions</a>
+                        </li>
+                        <span class="menu-break">|</span>
+                        <li>
+                            <a class="analytics-click p4" href="/pages/stores" data-menu-type="footer copyright"
+                                data-menu-name="Store/Dealer Locator">Store/Dealer Locator</a>
+                        </li>
+                        <span class="menu-break">|</span>
+                        <li>
+                            <a class="analytics-click p4" href="/pages/unauthorized-dealers-alert"
+                                data-menu-type="footer copyright"
+                                data-menu-name="Unauthorized Dealer Alert">Unauthorized
+                                Dealer Alert</a>
+                        </li>
+                        <span class="menu-break">|</span>
+                        <li>
+                            <a class="analytics-click p4" href="/pages/social-responsibility"
+                                data-menu-type="footer copyright" data-menu-name="Social Responsibility">Social
+                                Responsibility</a>
+                        </li>
+                        <span class="menu-break">|</span>
+                        <li>
+                            <a class="analytics-click p4" href="/pages/accessibility" data-menu-type="footer copyright"
+                                data-menu-name="Accessibility">Accessibility</a>
+                        </li>
+                        <span class="menu-break">|</span>
+                        <li>
+                            <a class="analytics-click p4" href="/pages/california-consumer-privacy-rights"
+                                data-menu-type="footer copyright"
+                                data-menu-name="Do Not Sell My Personal Information">Do
+                                Not Sell My Personal
+                                Information</a>
+                        </li>
+                        <span class="menu-break">|</span>
+                        <li>
+                            <a class="analytics-click p4" href="/pages/patents" data-menu-type="footer copyright"
+                                data-menu-name="Patents">Patents</a>
+                        </li>
+                        <span class="menu-break">|</span>
+                        <li>
+                            <a class="analytics-click p4" href="/pages/patents" data-menu-type="footer copyright"
+                                data-menu-name="Patents">© 2024 Nixon Inc.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="description.js"></script>
+</body>
+
+</html>
