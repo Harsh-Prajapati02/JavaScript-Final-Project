@@ -35,34 +35,34 @@ window.addEventListener("load", () => {
 // Data Add(POST) on Server
 addToCartBtn.addEventListener("click", () => {
     let cartData = {
-        title : param.get("title"),
-        image : param.get("image"),
-        price : param.get("price"),
-        color : param.get("color")
+        title: param.get("title"),
+        image: param.get("image"),
+        price: param.get("price"),
+        color: param.get("color")
     }
     // console.log(cartData);
     fetch("http://localhost:3000/cart", {
-        method : "POST",
+        method: "POST",
         headers: {
             'Content-Type': 'application/json',
-          },
-        body : JSON.stringify(cartData)
+        },
+        body: JSON.stringify(cartData)
     }).then((res) => res.json())
-    .then((data) => {
-        fetchData()
-        alert("Added...")
-    })
-    .catch((err) => console.log(err))
+        .then((data) => {
+            fetchData()
+            alert("Added...")
+        })
+        .catch((err) => console.log(err))
 })
 
 // Data Show On Cart
 function fetchData() {
     fetch("http://localhost:3000/cart")
-    .then((res) => res.json())
-    .then((data) => {
-        cartCardList(data)
-    })
-    .catch((err) => console.log(err))
+        .then((res) => res.json())
+        .then((data) => {
+            cartCardList(data)
+        })
+        .catch((err) => console.log(err))
 }
 fetchData();
 
@@ -96,18 +96,18 @@ function CartSingleCard(id, image, title, price, color) {
 
 // Delete Cart Data 
 document.addEventListener("click", (e) => {
-    if(e.target.classList.contains("btn-close")) {
+    if (e.target.classList.contains("btn-close")) {
         deleteCartProduct(e.target.dataset.id)
     }
 })
 
 function deleteCartProduct(id) {
     fetch(`http://localhost:3000/cart/${id}`, {
-        method : "DELETE"
+        method: "DELETE"
     }).then((res) => res.json())
-    .then((data) => {
-        // console.log(data)
-        alert("Deleted...")
-    })
-    .catch((err) => console.log(err))
+        .then((data) => {
+            // console.log(data)
+            alert("Deleted...")
+        })
+        .catch((err) => console.log(err))
 }

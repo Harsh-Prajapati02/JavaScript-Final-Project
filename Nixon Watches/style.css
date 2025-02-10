@@ -970,7 +970,8 @@ a {
     font-size: 10px;
 }
 
-.cart-middle span, p {
+.cart-middle span,
+p {
     font-size: 12px;
     font-weight: 600;
     color: #3f3f3f;

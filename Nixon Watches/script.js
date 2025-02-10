@@ -139,13 +139,13 @@ SignupForm.addEventListener("submit", (evt) => {
         alert("Form Not Submitted!")
     }
 
-// Clear Inputs
-// document.getElementById("first-name").value = "";
-// document.getElementById("last-name").value = "";
-// document.getElementById("email").value = "";
-// document.getElementById("password").value = "";
+    // Clear Inputs
+    // document.getElementById("first-name").value = "";
+    // document.getElementById("last-name").value = "";
+    // document.getElementById("email").value = "";
+    // document.getElementById("password").value = "";
 
-//Push values(objects) in arr 
+    //Push values(objects) in arr 
     userDataArr.push(userSignupData);
     console.log(userDataArr);
 
@@ -159,44 +159,44 @@ let signinForm = document.getElementById("signin-form");
 signinForm.addEventListener("submit", (evt) => {
     evt.preventDefault();
 
-// Access values
-let email = document.getElementById("signin-email").value;
-let password = document.getElementById("signin-password").value;
+    // Access values
+    let email = document.getElementById("signin-email").value;
+    let password = document.getElementById("signin-password").value;
 
-// Object
-let userSigninData = {
-    email,
-    password
-}
+    // Object
+    let userSigninData = {
+        email,
+        password
+    }
 
-isValid = true;
-if (email == "") {
+    isValid = true;
     if (email == "") {
-        isValid = false;
-        document.getElementById("LoginEmailError").innerText = "Please enter a valid email address";
-        document.getElementById("signin-email").style.border = "1px solid #d54d4d";
+        if (email == "") {
+            isValid = false;
+            document.getElementById("LoginEmailError").innerText = "Please enter a valid email address";
+            document.getElementById("signin-email").style.border = "1px solid #d54d4d";
+        } else {
+            document.getElementById("LoginEmailError").innerText = "";
+            document.getElementById("signin-email").style.border = "1px solid #000";
+        }
     } else {
-        document.getElementById("LoginEmailError").innerText = "";
-        document.getElementById("signin-email").style.border = "1px solid #000";
+        if (password == "") {
+            isValid = false;
+            document.getElementById("LoginPasswordError").innerText = "Please enter a valid password";
+            document.getElementById("signin-password").style.border = "1px solid #d54d4d";
+        } else {
+            document.getElementById("LoginPasswordError").innerText = "";
+            document.getElementById("signin-password").style.border = "1px solid #000";
+        }
     }
-} else {
-    if (password == "") {
-        isValid = false;
-        document.getElementById("LoginPasswordError").innerText = "Please enter a valid password";
-        document.getElementById("signin-password").style.border = "1px solid #d54d4d";
-    } else {
-        document.getElementById("LoginPasswordError").innerText = "";
-        document.getElementById("signin-password").style.border = "1px solid #000";
-    }
-}
 
-// Clear Inputs
-// document.getElementById("signin-email").value = "";
-// document.getElementById("signin-password").value = "";
+    // Clear Inputs
+    // document.getElementById("signin-email").value = "";
+    // document.getElementById("signin-password").value = "";
 
     let check = userDataArr.filter((el) => {
         return el.email == userSigninData.email &&
-        el.password == userSigninData.password;
+            el.password == userSigninData.password;
     });
 
     if (check[0] && isValid == true) {
